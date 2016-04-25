@@ -29,10 +29,9 @@ app.use('/:str', function(req, res){
 	ans.natural = natural;
 
 	res.set({
-  		'Content-Type': 'text/plain',
-  		'Content-Length': '123',
-  		'ETag': '12345'
+  		'Content-Type': 'application/json'
 	})
+	res.statusCode = 200;
 	res.end(JSON.stringify(ans));
 
 });
@@ -43,8 +42,8 @@ app.use('/', function (req, res) {
 		title: 'Timestamp microservice',
 		message: 'API: Timestamp microservice',
 		usage: 'Example usage',
-		code: 'https://timestamp-ms.herokuapp.com/December%2015,%202015' + 
-		'<br />' + 'https://timestamp-ms.herokuapp.com/1450137600',
+		code: 'https://timemicroservice.herokuapp.com/December%2015,%202015' + 
+		'<br />' + 'https://timemicroservice.herokuapp.com/1450137600000',
 		output: 'Example output',
 		exampleoutput: '{ "unix": 1450137600, "natural": "December 15, 2015" }'
 	});
