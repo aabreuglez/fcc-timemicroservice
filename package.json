@@ -2,9 +2,12 @@
   "name": "free_code_weather_api",
   "version": "1.0.0",
   "description": "A simple weather api",
+  "engines": {
+    "node": "5.9.1"
+  },
   "main": "index.js",
   "scripts" : {
-    "start" : "index.js"
+    "start" : "node index.js"
   },
    
   "keywords": [
