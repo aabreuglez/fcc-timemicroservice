@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A simple weather api",
   "main": "index.js",
+  "scripts" : {
+    "start" : "index.js"
+  },
+   
   "keywords": [
     "weather",
     "api",
